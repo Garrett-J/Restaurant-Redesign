@@ -1,0 +1,45 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+h1 span {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(152, 27, 30);
+    line-height: 2;
+    padding: 10px;
+}
+
+h3 span {
+    background-color: rgba(152, 27, 30, 0.7);
+    color: white;
+    line-height: 2;
+    padding: 10px;
+}
+
+.picturediv1 {
+    background-image: url("capitalprawns.jpg") ;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.picturediv2 {
+    background-image: url("worwonton.jpg");
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
