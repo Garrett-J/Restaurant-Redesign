@@ -34,7 +34,7 @@ header {
 
 .navitem {
     text-decoration: none;
-    color: rgba(152, 27, 30);
+    color: #981b1e;
     font-size: calc(10px + 1vw);
 }
 
@@ -60,7 +60,7 @@ header {
 
 
 .colourdiv {
-    background-color:rgba(152, 27, 30);
+    background-color:rgb(152, 27, 30);
     color: white;
     height: 400px;
     position: relative;
@@ -322,7 +322,162 @@ margin-left: 0;
 }
 
 
+/* MENU SECTION */
 
+.backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: calc(10px + 1.5vw);
+    color: #255E38;
+    padding: 10px;
+   
+    
+}
+
+.menu-nav {
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 5rem 10vw;
+    background-color:#981b1e ;
+}
+.menu-btn {
+    display: flex;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #2b5d37;
+    border-radius: 4px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.menu-wrapper {
+    padding: 0 10vw;
+}
+
+.menu-title {
+    color: #981b1e;
+    font-size: calc(20px + 1.5vw);
+    font-weight: 800;
+    text-align: center;
+}
+
+.menu-section {
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+    
+}
+
+.dish {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-name {
+    font-weight: 800;
+    
+}
+
+
+
+.dish-price {
+    font-size: calc(15px + 0.2vw);
+    padding-left: 4rem;
+    line-height: 2rem;
+}
+
+
+
+.chefspecial-wrapper {
+    padding: 0 10vw;
+}
+
+.chefspecial-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.chefspecial-title {
+    color: #981b1e;
+    font-size: calc(20px + 1.5vw);
+    font-weight: 800;
+    margin: 0;
+}
+
+.combos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.combomeal {
+    padding-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.combomeal ul {
+    list-style: none;
+    padding: 0;
+    line-height: 3rem;
+}
+
+.combo-name {
+    font-weight: 800;
+}
+
+.set-dinners {
+    padding: 5rem 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sideorder {
+    padding: 5rem 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideorder-title{
+    color: #981b1e;
+    font-size: calc(20px + 1.5vw);
+    font-weight: 800;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.sideorder-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideorder-item {
+    list-style: none;
+    padding: 0;
+    line-height: 3rem;
+}
+
+.sideorder-price {
+    list-style: none;
+    padding-left: 8rem;
+    line-height: 3rem;
+}
 
 /* FOOTER SECTION */
 
