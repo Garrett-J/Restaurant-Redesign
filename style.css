@@ -324,6 +324,93 @@ margin-left: 0;
 
 /* MENU SECTION */
 
+
+
+.appetizer {
+    visibility: hidden;
+    display: none;
+}
+
+.soup {
+    visibility: hidden;
+    display: none;
+}
+
+.chowmein {
+    visibility: hidden;
+    display: none;
+}
+
+.friedrice {
+    visibility: hidden;
+    display: none;
+}
+
+.eggfuyung {
+    visibility: hidden;
+    display: none;
+}
+
+.beef {
+    visibility: hidden;
+    display: none;
+}
+
+.chickenduck {
+    visibility: hidden;
+    display: none;
+}
+
+.pork {
+    visibility: hidden;
+    display: none;
+}
+
+.chopsuey {
+    visibility: hidden;
+    display: none;
+}
+
+.teppan {
+    visibility: hidden;
+    display: none;
+}
+
+.hotpot {
+    visibility: hidden;
+    display: none;
+}
+
+.seafood {
+    visibility: hidden;
+    display: none;
+}
+
+.vegetarian {
+    visibility: hidden;
+    display: none;
+}
+
+.housespecialties {
+    visibility: hidden;
+    display: none;
+}
+
+.chefspecial {
+    visibility: hidden;
+    display: none;
+}
+
+.sideorder {
+    visibility: hidden;
+    display: none;
+}
+
+.visible {
+    display: block;
+    visibility: visible;
+}
+
 .backtotop {
     position: fixed;
     bottom: 10px;
@@ -343,7 +430,7 @@ margin-left: 0;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 5rem 10vw;
-    background-color:#981b1e ;
+    
 }
 .menu-btn {
     display: flex;
@@ -357,10 +444,11 @@ margin-left: 0;
     border-radius: 4px;
     padding: 3px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .menu-wrapper {
-    padding: 0 10vw;
+    padding: 0 15vw;
 }
 
 .menu-title {
@@ -368,13 +456,14 @@ margin-left: 0;
     font-size: calc(20px + 1.5vw);
     font-weight: 800;
     text-align: center;
+    
 }
 
 .menu-section {
     padding-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10rem;
+    column-gap: 7rem;
     
 }
 
@@ -382,6 +471,11 @@ margin-left: 0;
     padding-top: 0.5rem;
     display: flex;
     justify-content: space-between;
+}
+
+.dish-name-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .dish-name {
@@ -392,11 +486,11 @@ margin-left: 0;
 
 
 .dish-price {
-    font-size: calc(15px + 0.2vw);
-    padding-left: 4rem;
+    font-size: calc(12px + 0.2vw);
+    padding-left: 1rem;
     line-height: 2rem;
+    text-align: right;
 }
-
 
 
 .chefspecial-wrapper {
@@ -434,6 +528,12 @@ margin-left: 0;
     list-style: none;
     padding: 0;
     line-height: 3rem;
+    font-size: calc(12px + 0.2vw);
+    font-weight: 600;
+}
+
+.combo-price {
+    font-size: calc(12px + 0.2vw);
 }
 
 .combo-name {

@@ -27,6 +27,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -54,21 +56,21 @@
     </header>
 
     <div id="#top" class="menu-nav">
-      <a href="#appetizer" class="menu-btn">Appetizer</a>
-      <a href="#soup" class="menu-btn">Soup</a>
-      <a href="#chowmein" class="menu-btn">Chow Mein</a>
-      <a href="#friedrice" class="menu-btn">Fried Rice</a>
-      <a href="#eggfuyung" class="menu-btn">Egg Fu Yung</a>
-      <a href="#chickenduck" class="menu-btn">Chicken & Duck</a>
-      <a href="#beef" class="menu-btn">Beef</a>
-      <a href="#pork" class="menu-btn">Pork</a>
-      <a href="#chopsuey" class="menu-btn">Chop Suey</a>
-      <a href="teppan" class="menu-btn">Sizzling Teppan</a>
-      <a href="hotpot" class="menu-btn">Hot Pot</a>
-      <a href="#seafood" class="menu-btn">Seafood</a>
-      <a href="#vegetarian" class="menu-btn">Vegetarian</a>
-      <a href="#housespecialties" class="menu-btn">House Specialties</a>
-      <a href="#combinations" class="menu-btn">Chef's Special Combinations</a>
+      <a class="menu-btn appetizer-btn">Appetizer</a>
+      <a class="menu-btn soup-btn">Soup</a>
+      <a  class="menu-btn chowmein-btn">Chow Mein</a>
+      <a  class="menu-btn friedrice-btn">Fried Rice</a>
+      <a  class="menu-btn eggfuyung-btn">Egg Fu Yung</a>
+      <a  class="menu-btn chickenduck-btn">Chicken & Duck</a>
+      <a  class="menu-btn beef-btn">Beef</a>
+      <a  class="menu-btn pork-btn">Pork</a>
+      <a  class="menu-btn chopsuey-btn">Chop Suey</a>
+      <a class="menu-btn teppan-btn">Sizzling Teppan</a>
+      <a  class="menu-btn hotpot-btn">Hot Pot</a>
+      <a  class="menu-btn seafood-btn">Seafood</a>
+      <a class="menu-btn vegetarian-btn">Vegetarian</a>
+      <a  class="menu-btn housespecialties-btn">House Specialties</a>
+      <a class="menu-btn chefspecial-btn">Chef's Special Combinations</a>
     </div>
 
 
@@ -76,8 +78,8 @@
 
     <div class="menu-wrapper">
       
-      
-        <h2 id="appetizer" class="menu-title">Appetizers</h2>
+      <div class="appetizer visible">
+        <h2 class="menu-title">Appetizers</h2>
         <div class="menu-section">
         <div class="dish">
           <h3 class="dish-name">Spring Egg Roll</h3>
@@ -100,14 +102,15 @@
         
         </div>
       </div>
+    </div>
 
-      
-        <h2 id="soup" class="menu-title">Soup</h2>
+      <div class="soup">
+        <h2  class="menu-title">Soup</h2>
         <div class="menu-section">
 
         <div class="dish">
-          <h3 class="dish-name">Wonton Soup</h3>
-          <h3 class="dish-price">L $13.25 <br> M $10.25<br> S $5.95</h3>
+          <h3 class="dish-name">Wonton Soup </h3>
+          <h3 class="dish-price">S $5.95 / M $10.25 / L $13.25</h3>
         </div>
 
         <div class="dish">
@@ -120,7 +123,7 @@
         <div class="dish">
           <h3 class="dish-name">Velvet Chicken & Sweet Corn Soup</h3>
           
-          <h3 class="dish-price">L $11.95 <br> M $9.25 <br> S $5.50</h3>
+          <h3 class="dish-price">S $5.50 / M $9.25 / L $11.95</h3>
        
         </div>
 
@@ -134,14 +137,14 @@
         <div class="dish">
           <h3 class="dish-name">Wor Wonton Soup</h3>
           
-          <h3 class="dish-price">L $17.50 <br> M $14.25</h3>
+          <h3 class="dish-price">M $14.25 / L $17.50</h3>
        
         </div>
 
         <div class="dish">
           <h3 class="dish-name">Hot & Sour Soup</h3>
           
-          <h3 class="dish-price">L $17.25 <br> M $13.95 <br> S $7.95</h3>
+          <h3 class="dish-price">S $7.95 / M $13.95 / L $17.25</h3>
       
         </div>
 
@@ -159,18 +162,61 @@
   
         </div>
       </div>
+    </div>
 
-     
-        <h2 id="chowmein" class="menu-title">Chow Mein</h2>
+     <div class="chowmein">
+        <h2  class="menu-title">Chow Mein</h2>
         <div class="menu-section">
         <div class="dish">
-          <h3 class="dish-name">Chow Mein</h3>
+          <h3 class="dish-name">Plain Chow Mein</h3>
           
           <h3 class="dish-price">
-            Plain $12.95<br />
-            Chicken, Pork, or Mushroom $13.25<br />
-            Shrimp $14.25<br />
-            Beef $13.95
+            $12.95
+          </h3>
+        
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Chicken Chow Mein</h3>
+          
+          <h3 class="dish-price">
+            $13.25
+          </h3>
+        
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Pork Chow Mein</h3>
+          
+          <h3 class="dish-price">
+            $13.25
+          </h3>
+        
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Mushroom Chow Mein</h3>
+          
+          <h3 class="dish-price">
+            $13.25
+          </h3>
+        
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Shrimp Chow Mein</h3>
+          
+          <h3 class="dish-price">
+            $14.25
+          </h3>
+        
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Beef Chow Mein</h3>
+          
+          <h3 class="dish-price">
+            $13.95
           </h3>
         
         </div>
@@ -217,18 +263,54 @@
         
         </div>
       </div>
+    </div>
 
-      
-        <h2 id="friedrice" class="menu-title">Fried Rice</h2>
+      <div class="friedrice">
+        <h2  class="menu-title">Fried Rice</h2>
 
         <div class="menu-section">
 
         <div class="dish">
-          <h3 class="dish-name">Fried Rice</h3>
+          <h3 class="dish-name">Pork Fried Rice</h3>
           
           <h3 class="dish-price">
-            Pork, Shrimp, Chicken, Mushroom $11.95<br />
-            Beef $12.50
+            $11.95
+          </h3>
+       
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Shrimp Fried Rice</h3>
+          
+          <h3 class="dish-price">
+            $11.95
+          </h3>
+       
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Chicken Fried Rice</h3>
+          
+          <h3 class="dish-price">
+            $11.95
+          </h3>
+       
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Mushroom Fried Rice</h3>
+          
+          <h3 class="dish-price">
+            $11.95
+          </h3>
+       
+        </div>
+
+        <div class="dish">
+          <h3 class="dish-name">Beef Fried Rice</h3>
+          
+          <h3 class="dish-price">
+            $12.50
           </h3>
        
         </div>
@@ -261,9 +343,10 @@
        
         </div>
       </div>
+    </div>
 
-      
-        <h2 id="eggfuyung" class="menu-title">Egg Fu Yung</h2>
+      <div class="eggfuyung">
+        <h2  class="menu-title">Egg Fu Yung</h2>
         <div class="menu-section">
         <div class="dish">
           <h3 class="dish-name">Capital Egg Fu Yung</h3>
@@ -291,16 +374,16 @@
           
           <h3 class="dish-price">$12.75</h3>
         </div>
-       
+       </div>
       </div>
 
-      
-        <h2 id="chickenduck" class="menu-title">Chicken & Duck</h2>
+      <div class="chickenduck">
+        <h2  class="menu-title">Chicken & Duck</h2>
         <div class="menu-section">
         <div class="dish">
           <h3 class="dish-name">BBQ Duck</h3>
          
-          <h3 class="dish-price">W $42.00 H $23.00</h3>
+          <h3 class="dish-price">H $23.00 / W $42.00</h3>
        
         </div>
 
@@ -369,10 +452,10 @@
        
         </div>
       </div>
-
+    </div>
       
-      
-        <h2 id="beef" class="menu-title">Beef</h2>
+      <div class="beef">
+        <h2  class="menu-title">Beef</h2>
         <div class="menu-section">
         <div class="dish">
             <h3 class="dish-name">Stir Fried Beef with Oyster Sauce</h3>
@@ -424,9 +507,10 @@
             <h3 class="dish-price">$16.95</h3>
           </div>
         </div>
+      </div>
 
-        
-          <h2 id="pork" class="menu-title">Pork</h2>
+        <div class="pork" >
+          <h2 class="menu-title">Pork</h2>
           <div class="menu-section">
           <div class="dish">
             <h3 class="dish-name">Capital Style Boneless Pork</h3>
@@ -454,23 +538,34 @@
             <h3 class="dish-price">$12.95</h3>
           </div>
         </div>
-        
-          <h2 id="chopsuey" class="menu-title">Chop Suey & Vegetables</h2>
+      </div>
+
+      <div class="chopsuey">
+          <h2  class="menu-title">Chop Suey & Vegetables</h2>
           <div class="menu-section">
           <div class="dish">
-            <h3 class="dish-name">Two Kinds of Mushroom</h3>
+            <h3 class="dish-name">Beef or Chicken w/ Two Kinds of Mushroom</h3>
            
-            <h3 class="dish-price">Beef or Chicken $13.50<br>
-            Shrimp or Rock Cod $15.95</h3>
+            <h3 class="dish-price">$13.50</h3>
+          </div>
+
+          <div class="dish">
+            <h3 class="dish-name">Shrimp or Rock Cod w/ Two Kinds of Mushroom</h3>
+           
+            <h3 class="dish-price">$15.95</h3>
           </div>
           <div class="dish">
-            <h3 class="dish-name">Seasonal Vegetables</h3>
+            <h3 class="dish-name">Beef or Chicken w/ Seasonal Vegetables</h3>
             
-            <h3 class="dish-price">Beef or Chicken $14.50<br>
-            Shrimp or Rock Cod $15.95</h3>
+            <h3 class="dish-price"> $14.50</h3>
           </div>
           <div class="dish">
-            <h3 class="dish-name">Chicken or Beef with Broccoli</h3>
+            <h3 class="dish-name">Shrimp or Rock Cod w/ Seasonal Vegetables</h3>
+            
+            <h3 class="dish-price">$15.95</h3>
+          </div>
+          <div class="dish">
+            <h3 class="dish-name">Chicken or Beef w/ Broccoli</h3>
            
             <h3 class="dish-price">$13.95</h3>
           </div>
@@ -485,22 +580,35 @@
             <h3 class="dish-price">$13.95</h3>
           </div>
           <div class="dish">
-            <h3 class="dish-name">Sauteed Fresh Tomatoes</h3>
+            <h3 class="dish-name">Shrimp w/ Sauteed Fresh Tomatoes</h3>
             
-            <h3 class="dish-price">Shrimp $15.95<br>
-            Beef or Chicken $14.75</h3>
+            <h3 class="dish-price">$15.95</h3>
           </div>
           <div class="dish">
-            <h3 class="dish-name">Chop Suey (Mixed Vegetables)</h3>
+            <h3 class="dish-name">Beef or Chicken w/ Sauteed Fresh Tomatoes</h3>
+            
+            <h3 class="dish-price">$14.75</h3>
+          </div>
+          <div class="dish">
+            <h3 class="dish-name">Mushroom Chop Suey</h3>
            
-            <h3 class="dish-price">Mushroom $13.25<br>
-            Beef, Chicken or Pork $14.25<br>
-            Shrimp $15.50</h3>
+            <h3 class="dish-price">$13.25</h3>
+          </div>
+          <div class="dish">
+            <h3 class="dish-name">Beef, Chicken, or Pork Chop Suey</h3>
+           
+            <h3 class="dish-price">$14.25</h3>
+          </div>
+          <div class="dish">
+            <h3 class="dish-name">Shrimp Chop Suey</h3>
+           
+            <h3 class="dish-price">$15.50</h3>
           </div>
         </div>
-
+      </div>
         
-          <h2 id="teppan" class="menu-title">Sizzling Teppan</h2>
+      <div class="teppan">
+          <h2  class="menu-title">Sizzling Teppan</h2>
           <div class="menu-section">
           <div class="dish">
             <h3 class="dish-name">Prawns Teppan in Black Bean Sauce</h3>
@@ -524,9 +632,10 @@
               <h3 class="dish-price">$15.95</h3>
           </div>
         </div>
-
+      </div>
         
-          <h2 id="hotpot" class="menu-title">Hot Pot</h2>
+      <div class="hotpot">
+          <h2  class="menu-title">Hot Pot</h2>
           <div class="menu-section">
           <div class="dish">
             <h3 class="dish-name">Capital Hot Pot</h3>
@@ -549,9 +658,10 @@
             <h3 class="dish-price">$17.95</h3>
           </div>
         </div>
+      </div>
 
-        
-          <h2 id="seafood" class="menu-title">Seafood</h2>
+        <div class="seafood">
+          <h2  class="menu-title">Seafood</h2>
           <div class="menu-section">
           <div class="dish">
             <h3 class="dish-name">Deep Fried Prawns</h3>
@@ -605,9 +715,10 @@
             <h3 class="dish-price">$16.25</h3>
           </div>
         </div>
-
+      </div>
         
-          <h2 id="vegetarian" class="menu-title">Vegetarian</h2>
+      <div class="vegetarian">
+          <h2  class="menu-title">Vegetarian</h2>
           <div class="menu-section">
           <div class="dish">
             <h3 class="dish-name">Mushroom Chow Mein</h3>
@@ -675,9 +786,10 @@
             <h3 class="dish-price">$14.95</h3>
           </div>
         </div>
-
+      </div>
        
-          <h2 id="housespecialties" class="menu-title">House Specialities</h2>
+      <div class="housespecialties">
+          <h2  class="menu-title">House Specialities</h2>
           <div class="menu-section">
           <div class="dish">
             <h3 class="dish-name">Signapore Prawns</h3>
@@ -717,7 +829,9 @@
           </div>
         </div>
     </div>
+  </div>
 
+<div class="chefspecial">
     <div class="chefspecial-wrapper">
       <div class="chefspecial-header">
         <h1 id="combinations" class="chefspecial-title">CHEF'S SPECIAL</h1>
@@ -806,8 +920,9 @@
       </div>
     </div>
     </div>
+  </div>
 
-    <div class="sideorder">
+    <div id="sideorder" class="sideorder">
       <h3 class="sideorder-title">Side Orders</h3>
       <div class="sideorder-flex">
       <ul class="sideorder-item">
