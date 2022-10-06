@@ -30,9 +30,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
-  <body>
+  <body class="menu-body">
     <header>
-      <img src="textonly.png" class="textlogo" alt="" />
+      
       <nav>
         <div class="navlist">
           <ul class="navmenu">
@@ -46,7 +46,7 @@
               >
             </li>
             <li>
-              <a class="navitem" href="http://127.0.0.1:5500/contact.html"
+              <a class="navitem noborder" href="http://127.0.0.1:5500/contact.html"
                 >Contact</a
               >
             </li>
@@ -54,9 +54,10 @@
         </div>
       </nav>
     </header>
-
+    <div class="menu">
+    <div class="menu-nav-wrapper">
     <div id="#top" class="menu-nav">
-      <a class="menu-btn appetizer-btn">Appetizer</a>
+      <a class="menu-btn appetizer-btn active">Appetizer</a>
       <a class="menu-btn soup-btn">Soup</a>
       <a  class="menu-btn chowmein-btn">Chow Mein</a>
       <a  class="menu-btn friedrice-btn">Fried Rice</a>
@@ -72,6 +73,7 @@
       <a  class="menu-btn housespecialties-btn">House Specialties</a>
       <a class="menu-btn chefspecial-btn">Chef's Special Combinations</a>
     </div>
+  </div>
 
 
     <a class="backtotop" href="#top"><i class="fa-solid fa-arrow-turn-up"></a></i>
@@ -942,7 +944,9 @@
     </div>
   </div>
 
+
     <footer>
+    </div>
       <div class="footerinfo">
         <i class="footericon fa-solid fa-location-pin"></i>
         <p>45766 Kipp Ave. Chilliwack BC, V2P 1Y4</p>
@@ -958,7 +962,7 @@
       </div>
       <div class="footerinfo">
         <img class="footerpic" src="Mainlogo.png" alt="Capital logo" />
-        <p>Made by <a href="https://garrettjohnson.ca">Garrett Johnson</a></p>
+        <p>Made by <a class="footerlink" href="https://garrettjohnson.ca">Garrett Johnson</a></p>
       </div>
     </footer>
 
