@@ -6,26 +6,26 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
     padding:1rem;
+    background-color: #5b1012;
 }
 
 
 .navlist {
     display: flex;
     padding: 0 3vw;
-
+    
 }
 
 .navmenu {
     display: flex;
     flex-direction: row;
     list-style: none;
-    background-color:white;
     margin: 0;
     padding: 0;
-    gap: 3rem;
+    gap: 3vw;
 }
 
 .navlist :hover {
@@ -34,15 +34,18 @@ header {
 
 .navitem {
     text-decoration: none;
-    color: rgba(152, 27, 30);
+    color: white;
     font-size: calc(10px + 1vw);
+    padding-right: 3vw;
+    border-right: 1px solid white;
 }
 
-.textlogo {
-    width: calc(25px + 7vw);
-    height: auto;
-    display: flex;
+.noborder {
+    border-right:1px solid #5b1012 ;
+    padding-right: 0;
 }
+
+
 
 /* HOME PAGE */
 
@@ -60,8 +63,8 @@ header {
 
 
 .colourdiv {
-    background-color:rgba(152, 27, 30);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: rgba(152, 27, 30);
     height: 400px;
     position: relative;
     text-align: center;
@@ -85,8 +88,14 @@ header {
 
 .smallheader {
     font-size: calc(10px + 1.5vw);
-    background-color: rgba(152, 27, 30, 0.7);
+    background-color:rgba(44, 44, 44, 0.642);
     color: white;
+    padding: 20px;
+}
+
+.smallheader2 {
+    font-size: calc(10px + 1.5vw);
+    color: rgba(152, 27, 30);
     padding: 20px;
 }
 
@@ -107,9 +116,11 @@ header {
     width: fit-content;
     font-size: calc(10px + 1.5vw);
     padding: 15px 15px;
-    background-color:rgb(255, 255, 255);
-    color: rgba(152, 27, 30);
+    background-color:rgba(152, 27, 30);
+    color: white;
     border-color: #a23235;
+    
+    border-color: #5b1012;
     border-radius:15px;
     border-width: 3px;
     border-style: solid;
@@ -121,17 +132,19 @@ header {
 
 .btn:hover {
     background-color:rgba(152, 27, 30);
-    border-color: white;
+    border-color: #5b1012;
     color: white;
+    box-shadow: 3px 3px rgba(152, 27, 30) ;
+    top: 1px;
 }
 
 /* CONTACT PAGE */
 
 .picturedivcontact {
-    background-image: url("capitalprawns.jpg") ;
-    height: 900px;
-    background-position: center;
-    background-size: cover;
+    background-image: url("wok.jpg") ;
+    background-position: top;
+    background-size:cover;
+    height: 600px;
     position: relative;
     text-align: center;
     display: flex;
@@ -140,7 +153,7 @@ header {
 }
 
 .contactcolordiv {
-    background-color:rgba(44, 44, 44, 0.859);
+    background-color:rgba(44, 44, 44, 0.642);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,7 +211,7 @@ header {
 }
 
 .contactcolordiv2 {
-    background-color:#a23235 ;
+    background-color: rgba(0, 0, 0, 0.13);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -209,14 +222,15 @@ header {
 
 .contactformheader {
     width: 400px;
-    color: white;
+    color: #5b1012;
     display: flex;
-    line-height: 2rem;
+    line-height: 2vw;
+    font-size: calc(14px + 0.5vw);
 }
 form {
     width: 650px;
     display: flex;
-    color: white;
+    color: #5b1012;
 }
 
 .form-ul {
@@ -262,7 +276,7 @@ textarea {
 }
 
 .formbutton {
-    background-color: #82282a;
+    background-color: #5b1012;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -275,10 +289,11 @@ textarea {
 /* LOCATION PAGE */
 
 .locationdiv {
-    background-color: #a23235;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: #5b1012;
 }
 
-.vidcontainer1 {
+.vidcontainer {
     display: flex;
     flex-direction: row;
     padding: 5rem 10vw;
@@ -286,24 +301,16 @@ textarea {
     align-items:flex-end;
 }
 
-.locationheader1 {
+.locationheader {
     font-size: calc(15px + 0.2vw);
-    color: white;
+    
     line-height:calc(3rem + 1vw);
 }
 
-.vidcontainer2 {
+.textlogo {
+    width: 20vw;
+    height: auto;
     display: flex;
-    flex-direction: row-reverse;
-    padding: 0 10vw 5rem 10vw;
-    gap: calc(5rem + 7vw);
-    align-items: flex-end;
-}
-
-.locationheader2 {
-    font-size: calc(15px + 0.2vw);
-    color: white;
-    line-height:calc(3rem + 1vw);
 }
 
 .locationhr {
@@ -313,16 +320,295 @@ border-radius: 5px;
 margin-left: 0;
 }
 
+
 .locationyear {
     font-size: calc(10px + 1.5vw);
-    color: white;
+    color: #5b1012;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 4rem 0;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 4rem;
+}
+
+
+/* MENU SECTION */
+
+.menu-body {
+    background-color: rgba(0, 0, 0, 0.13);
+    
+}
+
+.appetizer {
+    visibility: hidden;
+    display: none;
+}
+
+.soup {
+    visibility: hidden;
+    display: none;
+}
+
+.chowmein {
+    visibility: hidden;
+    display: none;
+}
+
+.friedrice {
+    visibility: hidden;
+    display: none;
+}
+
+.eggfuyung {
+    visibility: hidden;
+    display: none;
+}
+
+.beef {
+    visibility: hidden;
+    display: none;
+}
+
+.chickenduck {
+    visibility: hidden;
+    display: none;
+}
+
+.pork {
+    visibility: hidden;
+    display: none;
+}
+
+.chopsuey {
+    visibility: hidden;
+    display: none;
+}
+
+.teppan {
+    visibility: hidden;
+    display: none;
+}
+
+.hotpot {
+    visibility: hidden;
+    display: none;
+}
+
+.seafood {
+    visibility: hidden;
+    display: none;
+}
+
+.vegetarian {
+    visibility: hidden;
+    display: none;
+}
+
+.housespecialties {
+    visibility: hidden;
+    display: none;
+}
+
+.chefspecial {
+    visibility: hidden;
+    display: none;
+}
+
+.sideorder {
+    visibility: hidden;
+    display: none;
+}
+
+.visible {
+    display: block;
+    visibility: visible;
 }
 
 
 
+.backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: calc(10px + 1.5vw);
+    color: #255E38;
+    padding: 10px;
+   
+    
+}
+
+.menu-nav-wrapper {
+    padding: 2rem 25vw 0;
+    
+}
+.menu-nav {
+    display: flex;
+    flex-flow:row wrap;
+    border-style: solid;
+    border-color: rgba(0, 0, 0);
+    border-width: 2px 0 0 2px;
+    padding: 0;
+    margin: 20px;
+}
+.menu-btn {
+    display: block;
+    max-width: 100%;
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    margin: 0;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    border-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: calc(14px + 0.3vw);
+    font-weight: 600;
+}
+
+.active {
+    color:white;
+    background-color:#5b1012;
+
+}
+
+.menu-wrapper {
+    padding: 0 15vw;
+    
+}
+
+.menu-title {
+    color: #981b1e;
+    font-size: calc(20px + 1.5vw);
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7rem;
+    align-items: center;
+}
+
+.dish {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-name {
+    font-weight: 800;
+
+}
+
+
+
+.dish-price {
+    font-size: calc(12px + 0.2vw);
+    padding-left: 1rem;
+    line-height: 2rem;
+    text-align: right;
+}
+
+
+.chefspecial-wrapper {
+    padding: 0 10vw;
+}
+
+.chefspecial-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.chefspecial-title {
+    color: #981b1e;
+    font-size: calc(20px + 1.5vw);
+    font-weight: 800;
+    margin: 0;
+    padding-top: 3vw;
+}
+
+.combos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.combomeal {
+    padding-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.combomeal ul {
+    list-style: none;
+    padding: 0;
+    line-height: 3rem;
+    font-size: calc(12px + 0.2vw);
+    font-weight: 600;
+}
+
+.combo-price {
+    font-size: calc(12px + 0.2vw);
+}
+
+.combo-name {
+    font-weight: 800;
+}
+
+.set-dinners {
+    padding: 5rem 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sideorder {
+    padding: 5rem 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideorder-title{
+    color: #981b1e;
+    font-size: calc(20px + 1.5vw);
+    font-weight: 800;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.sideorder-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideorder-item {
+    list-style: none;
+    padding: 0;
+    line-height: 3rem;
+}
+
+.sideorder-price {
+    list-style: none;
+    padding-left: 8rem;
+    line-height: 3rem;
+}
 
 /* FOOTER SECTION */
 
@@ -330,14 +616,15 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding-top: 3rem;
+    padding: 3rem 0 1rem 0;
+    background-color:#5b1012;
+    gap: 3rem;
 }
 
 .footerinfo {
     display: flex;
     flex-direction: column;
-    background-color:white;
-    color: rgba(152, 27, 30);
+    color: white;
     align-items: flex-start;
     
     font-size:calc(10px + .7); ;
@@ -346,8 +633,10 @@ footer {
 .footericon {
     display: flex;
     text-align: center;
-    
+}
 
+.location{
+    margin-bottom: 3rem;
 }
 
 .footerpic {
@@ -361,4 +650,13 @@ footer {
     width: calc(25px + 6vw);
     height: auto;
     margin: 0 auto;
+}
+
+.footerlink {
+    text-decoration: underline;
+    color: white;
+}
+
+.madeby {
+    margin-top: 2rem;
 }
