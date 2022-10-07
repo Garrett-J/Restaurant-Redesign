@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
+    background-color: white;
 }
 
 header {
@@ -9,8 +10,19 @@ header {
     justify-content: flex-end;
     align-items: flex-end;
     padding:1rem;
-    background-color: #5b1012;
+    background-color: white;
+    
 }
+footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 3rem 0 1rem 0;
+    gap: 3rem;
+    background-color: #455628;
+}
+
+
 
 
 .navlist {
@@ -19,6 +31,14 @@ header {
     
 }
 
+.nav-pic{
+    width: calc(120px + 1vw);
+    height: auto;
+    position: absolute;
+    left: 1rem;
+    top: calc(0.6rem + 0.3vw);
+
+}
 .navmenu {
     display: flex;
     flex-direction: row;
@@ -34,14 +54,14 @@ header {
 
 .navitem {
     text-decoration: none;
-    color: white;
+    color: #242020;
     font-size: calc(10px + 1vw);
     padding-right: 3vw;
-    border-right: 1px solid white;
+    border-right: 1px solid #5b1012;
 }
 
 .noborder {
-    border-right:1px solid #5b1012 ;
+    border-right:1px solid white;
     padding-right: 0;
 }
 
@@ -62,16 +82,22 @@ header {
 }
 
 
+
+
 .colourdiv {
-    background-color: rgba(0, 0, 0, 0.13);
+    background-color: white;
     color: rgba(152, 27, 30);
-    height: 400px;
+    height:fit-content;
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 2vw 0;
+}
+
+.colourdiv-wrapper {
+    padding: 2rem 0;
 }
 
 .picturediv2 {
@@ -95,8 +121,9 @@ header {
 
 .smallheader2 {
     font-size: calc(10px + 1.5vw);
-    color: rgba(152, 27, 30);
-    padding: 20px;
+    color: #455628;
+    margin-top: 0;
+    
 }
 
 .bigheader {
@@ -129,6 +156,7 @@ header {
     letter-spacing: 0.5px;
     transition:0.5s;
 }
+
 
 .btn:hover {
     background-color:rgba(152, 27, 30);
@@ -188,8 +216,8 @@ header {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #a23235;
-    margin: 1em 0;
+    border-top: 2px solid #a23235;
+    margin: 2em 0;
     padding: 0;
 }
 
@@ -211,7 +239,6 @@ header {
 }
 
 .contactcolordiv2 {
-    background-color: rgba(0, 0, 0, 0.13);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -222,15 +249,15 @@ header {
 
 .contactformheader {
     width: 400px;
-    color: #5b1012;
+    color: black;
     display: flex;
-    line-height: 2vw;
+    line-height: 2.2vw;
     font-size: calc(14px + 0.5vw);
 }
 form {
     width: 650px;
     display: flex;
-    color: #5b1012;
+    color: #455628;
 }
 
 .form-ul {
@@ -289,8 +316,8 @@ textarea {
 /* LOCATION PAGE */
 
 .locationdiv {
-    background-color: rgba(0, 0, 0, 0.13);
-    color: #5b1012;
+    background-color: rgba(0, 0, 0, 0);
+    color: #242020;
 }
 
 .vidcontainer {
@@ -302,8 +329,7 @@ textarea {
 }
 
 .locationheader {
-    font-size: calc(15px + 0.2vw);
-    
+    font-size: calc(18px + 0.2vw);
     line-height:calc(3rem + 1vw);
 }
 
@@ -314,8 +340,7 @@ textarea {
 }
 
 .locationhr {
-border: 6px solid #255E38;
-
+border: 2px solid #5b1012;
 border-radius: 5px;
 margin-left: 0;
 }
@@ -323,7 +348,7 @@ margin-left: 0;
 
 .locationyear {
     font-size: calc(10px + 1.5vw);
-    color: #5b1012;
+    color: #455628;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,10 +360,7 @@ margin-left: 0;
 
 /* MENU SECTION */
 
-.menu-body {
-    background-color: rgba(0, 0, 0, 0.13);
-    
-}
+
 
 .appetizer {
     visibility: hidden;
@@ -477,7 +499,8 @@ margin-left: 0;
 }
 
 .menu-wrapper {
-    padding: 0 15vw;
+    padding: 2rem 15vw 10rem 15vw;
+    
     
 }
 
@@ -487,8 +510,8 @@ margin-left: 0;
     font-weight: 800;
     text-align: center;
     margin: 0;
-    padding-top: 3vw;
-    padding-bottom: 2vw;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .menu-section {
@@ -569,6 +592,7 @@ margin-left: 0;
 
 .combo-name {
     font-weight: 800;
+    margin: 0;
 }
 
 .set-dinners {
@@ -579,7 +603,10 @@ margin-left: 0;
 }
 
 .sideorder {
-    padding: 5rem 10vw;
+    padding: 0 10vw;
+}
+
+.sideorder-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -590,6 +617,7 @@ margin-left: 0;
     font-size: calc(20px + 1.5vw);
     font-weight: 800;
     margin: 0;
+    padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -602,6 +630,7 @@ margin-left: 0;
     list-style: none;
     padding: 0;
     line-height: 3rem;
+    font-weight: 800;
 }
 
 .sideorder-price {
@@ -612,14 +641,6 @@ margin-left: 0;
 
 /* FOOTER SECTION */
 
-footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 3rem 0 1rem 0;
-    background-color:#5b1012;
-    gap: 3rem;
-}
 
 .footerinfo {
     display: flex;
@@ -647,9 +668,10 @@ footer {
 
 .biglogo {
     display: block;
-    width: calc(25px + 6vw);
+    width: calc(200px + 10vw);
     height: auto;
     margin: 0 auto;
+    
 }
 
 .footerlink {
