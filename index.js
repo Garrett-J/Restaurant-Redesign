@@ -60,7 +60,7 @@ $(document).ready(function() {
         $('.chopsuey').addClass('visible');
         $('.soup, .appetizer, .chowmein, .friedrice , .eggfuyung, .chickenduck, .beef, .pork, .teppan, .hotpot, .seafood, .vegetarian, .housespecialties, .chefspecial, .sideorder').removeClass('visible');
         $('.chopsuey-btn').addClass('active');
-        $('.soup-btn, .appetizer-btn, .chowmein-btn, .friedrice-btn, .eggfuyung-btn, .chickenduck-btn, .beef-btn, .pork-btn, .teppan-btn, .hotpot-btn, .seafood-btn, .vegetarian-btn, .housespecialties-btn, .chefspecial-btn .sideorder-btn').removeClass('active');
+        $('.soup-btn, .appetizer-btn, .chowmein-btn, .friedrice-btn, .eggfuyung-btn, .chickenduck-btn, .beef-btn, .pork-btn, .teppan-btn, .hotpot-btn, .seafood-btn, .vegetarian-btn, .housespecialties-btn, .chefspecial-btn, .sideorder-btn').removeClass('active');
     });
 
     $('.teppan-btn').click(function(){

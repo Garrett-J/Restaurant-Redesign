@@ -249,8 +249,9 @@ footer {
 
 .contactformheader {
     width: 400px;
-    color: black;
+    color: #242020;
     display: flex;
+    text-align: left;
     line-height: 2.2vw;
     font-size: calc(14px + 0.5vw);
 }
@@ -325,12 +326,14 @@ textarea {
     flex-direction: row;
     padding: 5rem 10vw;
     gap: calc(5rem + 7vw);
-    align-items:flex-end;
+    align-items:top;
 }
 
-.locationheader {
-    font-size: calc(18px + 0.2vw);
-    line-height:calc(3rem + 1vw);
+.locationheader p {
+    font-size: calc(14px + 0.2vw);
+    line-height:calc(2rem + 1vw);
+    margin: 0;
+    padding-top: 4rem;
 }
 
 .textlogo {
@@ -355,6 +358,11 @@ margin-left: 0;
     align-items: center;
     gap: 2rem;
     padding-top: 4rem;
+}
+
+.locationtitle {
+    font-size: calc(10px + 1.5vw);
+    color: #455628;
 }
 
 
@@ -468,8 +476,8 @@ margin-left: 0;
     display: flex;
     flex-flow:row wrap;
     border-style: solid;
-    border-color: rgba(0, 0, 0);
-    border-width: 2px 0 0 2px;
+    border-color: rgb(36, 32, 32, 0.5);
+    border-width: 1px 0 0 1px;
     padding: 0;
     margin: 20px;
 }
@@ -479,12 +487,12 @@ margin-left: 0;
     flex: 1 0 auto;
     box-sizing: border-box;
     margin: 0;
-    color: black;
+    color: rgb(36, 32, 32);
     background-color: white;
     border-style: solid;
-    border-width: 0 2px 2px 0;
-    border-color: rgb(0, 0, 0);
-    padding: 10px 15px;
+    border-width: 0 1px 1px 0;
+    border-color: rgba(36, 32, 32, 0.5);
+    padding: 10px 30px;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
@@ -500,7 +508,7 @@ margin-left: 0;
 
 .menu-wrapper {
     padding: 2rem 15vw 10rem 15vw;
-    
+    color: #242020;
     
 }
 
@@ -533,7 +541,7 @@ margin-left: 0;
 
 .dish-name {
     font-weight: 800;
-
+    font-size: 1.1rem;
 }
 
 
@@ -619,6 +627,7 @@ margin-left: 0;
     margin: 0;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    
 }
 
 .sideorder-flex {
@@ -631,12 +640,14 @@ margin-left: 0;
     padding: 0;
     line-height: 3rem;
     font-weight: 800;
+    font-size: 1.1rem;
 }
 
 .sideorder-price {
     list-style: none;
     padding-left: 8rem;
     line-height: 3rem;
+    font-size: calc(12px + 0.2vw);
 }
 
 /* FOOTER SECTION */
