@@ -1,4 +1,8 @@
+
+
 $(document).ready(function() {
+
+    $("iframe").fitDivs;
 
     $('.soup-btn').click(function(){
         $('.soup').addClass('visible');
@@ -112,35 +116,5 @@ $(document).ready(function() {
         $('.soup-btn, .appetizer-btn, .chowmein-btn, .friedrice-btn, .eggfuyung-btn, .chickenduck-btn, .beef-btn, .pork-btn, .chopsuey-btn, .teppan-btn, .hotpot-btn, .seafood-btn, .vegetarian-btn, .housespecialties-btn, .chefspecial-btn').removeClass('active');
     });
     
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
+
