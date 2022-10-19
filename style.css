@@ -323,9 +323,7 @@ textarea {
         padding: 2rem 2rem;
         
     }
-    form {
-        
-    }
+    
     input, textarea {
         width: 100%;
     }
@@ -366,9 +364,7 @@ textarea {
     display: flex;
 }
 
-.locationvideo {
-    
-}
+
 
 iframe {
    width: 30vw;
@@ -528,7 +524,7 @@ margin-left: 0;
 }
 
 .menu-nav-wrapper {
-    padding: 2rem 25vw 0;
+    padding: 2rem 20vw 0;
     
 }
 .menu-nav {
@@ -559,6 +555,7 @@ margin-left: 0;
     font-weight: 600;
 }
 
+
 .active {
     color:white;
     background-color:#5b1012;
@@ -566,9 +563,10 @@ margin-left: 0;
 }
 
 .menu-wrapper {
-    padding: 2rem 15vw 10rem 15vw;
+    width: 80%;
+    margin: 0 auto;
     color: #242020;
-    
+    padding-bottom: 10rem;
 }
 
 .menu-title {
@@ -584,13 +582,16 @@ margin-left: 0;
 .menu-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 7rem;
+    column-gap: 5vw;
+    row-gap: 3vw;
     align-items: center;
 }
+
 
 .dish {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .dish-name-container {
@@ -598,9 +599,10 @@ margin-left: 0;
     flex-direction: column;
 }
 
+
 .dish-name {
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: calc(14px + 0.2vw);
 }
 
 
@@ -608,7 +610,6 @@ margin-left: 0;
 .dish-price {
     font-size: calc(12px + 0.2vw);
     padding-left: 1rem;
-    line-height: 2rem;
     text-align: right;
 }
 
@@ -709,6 +710,64 @@ margin-left: 0;
     font-size: calc(12px + 0.2vw);
 }
 
+@media screen and (max-width: 1023px) {
+    .menu-nav-wrapper{
+        padding: 2rem 5vw 0;
+    }
+ .menu-nav {
+    
+    display: grid;
+    grid-template-columns: repeat(8, 25%);
+    overflow: auto;
+ }
+
+ .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .menu-section {
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+ }
+
+ .dish {
+    display: flex;
+    
+    
+ }
+
+
+}
+
+@media screen and (max-width: 767px ) {
+
+    .menu-nav {
+        grid-template-columns: repeat(8, 50%);
+    }
+
+    .menu-wrapper {
+        display: flex;
+    }
+    .menu-section {
+        align-items: stretch;
+    }
+
+    .dish {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .dish-price {
+        padding-left: 0;
+        margin: 0;
+     }
+}
+
+
+
 /* FOOTER SECTION */
 
 footer {
@@ -739,9 +798,7 @@ footer {
     margin-bottom: 3rem;
 }
 
-.footerpic {
-  
-}
+
 
 .biglogo {
     display: block;
