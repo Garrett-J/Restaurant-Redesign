@@ -476,6 +476,7 @@ textarea {
 .locationdiv {
     background-color: rgba(0, 0, 0, 0);
     color: #242020;
+    padding-bottom: 4rem;
 }
 
 .vidcontainer {
