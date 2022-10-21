@@ -1,8 +1,54 @@
+let navList = document.querySelector('.navlist');
+let menuBtn = document.querySelector('.nav-btn');
+let menuBrgr = document.querySelector('.burger-menu');
+let navMenu = document.querySelector('.navmenu');
+let menuBackground = document.querySelector('.mobile-menu-background');
+let menuWrapper = document.querySelector('.mobile-menu-wrapper');
+let menuOpen = false;
+let mq = window.matchMedia( "screen and (max-width: 1023px)");
+let body = document.querySelector('body')
+
+menuBtn.addEventListener('click', () => {
+    if (!menuOpen) {
+        menuBrgr.classList.add('open');
+        navList.classList.add('menuvisible');
+        navMenu.classList.add('mobileopen');
+        menuBackground.classList.add('black');
+        body.classList.add('body-no-scroll');
+        menuWrapper.classList.add('height100');
+        menuOpen = true;
+    } else {
+        menuBrgr.classList.remove('open');
+        navList.classList.remove('menuvisible');
+        navMenu.classList.remove('mobileopen');
+        menuBackground.classList.remove('black');
+        body.classList.remove('body-no-scroll');
+        menuWrapper.classList.remove('height100');
+        menuOpen = false;
+    }
+});
+
+function maxWidthMenu (mq) {
+if (mq.matches) {
+    console.log("mobile device")
+} else {
+    menuBrgr.classList.remove('open');
+    navList.classList.remove('menuvisible');
+    navMenu.classList.remove('mobileopen');
+    menuBackground.classList.remove('black');
+    body.classList.remove('body-no-scroll');
+    menuWrapper.classList.remove('height100');
+    menuOpen = false;
+    console.log("desktop")
+}
+};
+
+maxWidthMenu(mq);
+mq.addListener(maxWidthMenu);
 
 
 $(document).ready(function() {
-
-    $("iframe").fitDivs;
+    
 
     $('.soup-btn').click(function(){
         $('.soup').addClass('visible');
