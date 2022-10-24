@@ -116,11 +116,11 @@ header {
     }
 
     .burger-menu.open::before {
-        transform: rotate(45deg) translate(-20px, 20px) ;
+        transform: rotate(45deg) translate(-33px, 33px) ;
     }
 
     .burger-menu.open::after {
-        transform: rotate(-45deg) translate(-20px, -20px);
+        transform: rotate(-45deg) translate(-33px, -33px);
     }
 
     .navlist {
@@ -344,7 +344,7 @@ header {
 }
 
 .contactheader {
-    font-size: calc(15px + 1.5vw);
+    font-size: calc(18px + 1.5vw);
     color: white;
     padding: 20px;
     line-height:calc(3rem + 1vw);
@@ -392,7 +392,7 @@ header {
     display: flex;
     text-align: left;
     line-height: 2.5rem;
-    font-size: calc(14px + 0.5vw);
+    font-size: calc(16px + 0.5vw);
 }
 form {
     
@@ -438,7 +438,7 @@ textarea {
 
 .formbuttoncontainer {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     padding: 2rem 0;
 }
 
@@ -489,7 +489,7 @@ textarea {
 
 
 .locationheader p {
-    font-size: calc(14px + 0.2vw);
+    font-size: calc(16px + 0.5vw);
     line-height:calc(2rem + 1vw);
     margin: 0;
     padding-top: 2vw;
@@ -530,15 +530,18 @@ margin-left: 0;
 }
 
 .locationtitle {
-    font-size: calc(10px + 1.5vw);
+    font-size: calc(18px + 0.5vw);
     color: #44522b;
     font-weight: 600;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
 
     .locationyear {
-        padding-top: 1rem;
+        padding: 1rem 1rem 0 1rem;
+        font-size: 20px;
+        text-align: center;
+        
     }
     .vidcontainer {
         display: flex;
@@ -554,6 +557,11 @@ margin-left: 0;
 
     .locationheader p {
         padding-top: 2rem;
+        font-size: 16px;
+    }
+
+    .locationtitle {
+        font-size: 20px;
     }
 }
 
@@ -688,7 +696,7 @@ margin-left: 0;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    font-size: calc(14px + 0.3vw);
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -728,7 +736,7 @@ margin-left: 0;
 .dish {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .dish-name-container {
@@ -739,15 +747,17 @@ margin-left: 0;
 
 .dish-name {
     font-weight: 800;
-    font-size: calc(14px + 0.2vw);
+    font-size: 16px;
 }
 
 
 
 .dish-price {
-    font-size: calc(12px + 0.2vw);
+   white-space: nowrap;
+    font-size: 16px;
     padding-left: 1rem;
     text-align: right;
+    
 }
 
 
@@ -774,6 +784,8 @@ margin-left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+   
 }
 
 .combomeal {
@@ -787,12 +799,12 @@ margin-left: 0;
     list-style: none;
     padding: 0;
     line-height: 3rem;
-    font-size: calc(12px + 0.2vw);
+    font-size: 16px;
     font-weight: 600;
 }
 
 .combo-price {
-    font-size: calc(12px + 0.2vw);
+    font-size: 16px;
 }
 
 .combo-name {
@@ -837,19 +849,24 @@ margin-left: 0;
     padding: 0;
     line-height: 3rem;
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: 16px;
+    white-space: nowrap;
 }
 
 .sideorder-price {
     list-style: none;
-    padding-left: 8rem;
+   
     line-height: 3rem;
-    font-size: calc(12px + 0.2vw);
+    font-size: 16px;
 }
 
 @media screen and (max-width: 1023px) {
     .menu-nav-wrapper{
         padding: 2rem 5vw 0;
+    }
+
+    br {
+        display: none;
     }
  .menu-nav {
     
@@ -876,6 +893,13 @@ margin-left: 0;
 
  .dish {
     display: flex;
+    flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;      
+ }
+
+ .dish-price {
+    padding-left: 0;
  }
 
 
@@ -884,7 +908,7 @@ margin-left: 0;
 @media screen and (max-width: 767px ) {
 
     .menu-nav {
-        grid-template-columns: repeat(8, 50%);
+        grid-template-columns: repeat(8, 100%);
     }
 
     .menu-wrapper {
@@ -892,18 +916,25 @@ margin-left: 0;
         justify-content: space-around;
     }
     .menu-section {
+        grid-template-columns: repeat(1, 1fr);
         align-items: stretch;
+        column-gap: 2rem;
     }
 
     .dish {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
     }
     .dish-price {
+        display: flex;
         padding-left: 0;
         margin: 0;
+    
      }
+
+     
 }
 
 
