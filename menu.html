@@ -1,981 +1,719 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Redesign</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Open Sans -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- Lato -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
-  <span class="mobile-menu-background"></span>
-
+<!-- Hidden by default, is active when mobile menu is open -->
+<span class="mobile_menu_background"></span>
     <header>
-      <div class="nav-btn">
-        <span class="burger-menu"></span>
-      </div>
-      <nav class="navlist">
-        <img class="nav-pic" src="textonly.png" alt="">
-         <div class="mobile-menu-wrapper">
-          <ul class="navmenu">
-            <li><a class="navitem" href="index.html">Home</a></li>
-            <li>
-              <a class="navitem active-nav" href="menu.html">Menu</a>
-            </li>
-            <li>
-              <a class="navitem" href="location.html"
-                >Our Restaurant</a>
-            </li>
-            <li>
-              <a class="navitem noborder" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          </div>
-        
-      </nav>
+        <div class="nav_btn">
+          <span class="burger_menu"></span>
+        </div>
+        <nav class="nav_list">
+            <img class="nav_pic" src="textonly.png" alt="">
+            <div class="mobile_menu_wrapper">
+                <ul class="nav_menu">
+                    <li><a class="nav_item" href="index.html">Home</a></li>
+                    <li><a class="nav_item active_nav" href="menu.html">Menu</a></li>
+                    <li><a class="nav_item" href="location.html">Our Restaurant</a></li>
+                    <li><a class="nav_item no_border" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <body class="menu-body">
 
+<body class="menu_body">
     <div class="menu">
-    <div class="menu-nav-wrapper">
-    <div id="#top" class="menu-nav">
-      <a class="menu-btn appetizer-btn active">Appetizer</a>
-      <a class="menu-btn soup-btn">Soup</a>
-      <a  class="menu-btn chowmein-btn">Chow Mein</a>
-      <a  class="menu-btn friedrice-btn">Fried Rice</a>
-      <a  class="menu-btn eggfuyung-btn">Egg Fu Yung</a>
-      <a  class="menu-btn chickenduck-btn">Chicken & Duck</a>
-      <a  class="menu-btn beef-btn">Beef</a>
-      <a  class="menu-btn pork-btn">Pork</a>
-      <a  class="menu-btn chopsuey-btn">Chop Suey</a>
-      <a class="menu-btn teppan-btn">Sizzling Teppan</a>
-      <a  class="menu-btn hotpot-btn">Hot Pot</a>
-      <a  class="menu-btn seafood-btn">Seafood</a>
-      <a class="menu-btn vegetarian-btn">Vegetarian</a>
-      <a  class="menu-btn housespecialties-btn">House Specialties</a>
-      <a class="menu-btn chefspecial-btn">Chef's Special Combinations</a>
-      <a class="menu-btn sideorder-btn">Side Orders</a>
+        <div class="menu_nav_wrapper">
+            <div id="#top" class="menu_nav">
+                <a class="menu_btn appetizer_btn active">Appetizer</a>
+                <a class="menu_btn soup_btn">Soup</a>
+                <a  class="menu_btn chowmein_btn">Chow Mein</a>
+                <a  class="menu_btn friedrice_btn">Fried Rice</a>
+                <a  class="menu_btn eggfuyung_btn">Egg Fu Yung</a>
+                <a  class="menu_btn chickenduck_btn">Chicken & Duck</a>
+                <a  class="menu_btn beef_btn">Beef</a>
+                <a  class="menu_btn pork_btn">Pork</a>
+                <a  class="menu_btn chopsuey_btn">Chop Suey</a>
+                <a class="menu_btn teppan_btn">Sizzling Teppan</a>
+                <a  class="menu_btn hotpot_btn">Hot Pot</a>
+                <a  class="menu_btn seafood_btn">Seafood</a>
+                <a class="menu_btn vegetarian_btn">Vegetarian</a>
+                <a  class="menu_btn housespecialties_btn">House Specialties</a>
+                <a class="menu_btn chefspecial_btn">Chef's Special Combinations</a>
+                <a class="menu_btn sideorder_btn">Side Orders</a>
+            </div>
+        </div>
+
+        <div class="menu_wrapper">
+            <div class="appetizer visible">
+                <h2 class="menu_title">Appetizers</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Spring Egg Roll</h3>
+                        <h3 class="dish_price">$3.50 each</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Deep Fried Chicken Wings</h3>
+                        <h3 class="dish_price">$13.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Peppery Chicken Wings</h3>
+                        <h3 class="dish_price">$14.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Lettuce Wrap</h3>
+                        <h3 class="dish_price">$17.95</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soup">
+                <h2  class="menu_title">Soup</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Wonton Soup </h3>
+                        <h3 class="dish_price">S $5.95 <br> M $10.25 <br> L $13.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Shredded Chicken with Tomato & Egg Swirls</h3>
+                        <h3 class="dish_price">$9.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Velvet Chicken & Sweet Corn Soup</h3>
+                        <h3 class="dish_price">S $5.50 <br> M $9.25 <br> L $11.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Consomme</h3>    
+                        <h3 class="dish_price">$3.00</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Wor Wonton Soup</h3>
+                        <h3 class="dish_price">M $14.25 <br> L $17.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Hot & Sour Soup</h3>
+                        <h3 class="dish_price">S $7.95 <br> M $13.95 <br> L $17.25</h3>                
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Rainbow Bean Cake Soup</h3>    
+                        <h3 class="dish_price">$11.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Chicken, Pork or Beef Noodle Soup</h3>
+                        <h3 class="dish_price">$11.25</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="chowmein">
+                <h2  class="menu_title">Chow Mein</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Plain Chow Mein</h3>
+                        <h3 class="dish_price">$12.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Chicken Chow Mein</h3>
+                        <h3 class="dish_price">$13.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pork Chow Mein</h3>
+                        <h3 class="dish_price">$13.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Mushroom Chow Mein</h3>
+                        <h3 class="dish_price">$13.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Shrimp Chow Mein</h3>
+                        <h3 class="dish_price">$14.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef Chow Mein</h3>
+                        <h3 class="dish_price">$13.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Cantonese Chow Mein</h3>
+                        <h3 class="dish_price">$17.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef & Tomato Chow Mein</h3>
+                        <h3 class="dish_price">$16.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pan Fried Noodle with Curry (Singapore Style)</h3>
+                        <h3 class="dish_price">$17.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Capital Chow Mein</h3>
+                        <h3 class="dish_price">$14.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Triple Seafood Chow Mein (Cantonese Style)</h3>
+                        <h3 class="dish_price">$18.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef Chow Fun (Broad Rice Noodle)</h3>
+                        <h3 class="dish_price">$17.50</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friedrice">
+                <h2  class="menu_title">Fried Rice</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                    <h3 class="dish_name">Pork Fried Rice</h3>
+                    <h3 class="dish_price">$11.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Shrimp Fried Rice</h3>
+                        <h3 class="dish_price">$11.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Chicken Fried Rice</h3>
+                        <h3 class="dish_price">$11.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Mushroom Fried Rice</h3>
+                        <h3 class="dish_price">$11.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef Fried Rice</h3>
+                        <h3 class="dish_price">$12.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Yang Chow Fried Rice</h3>
+                        <h3 class="dish_price">$12.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef & Tomato Fried Rice</h3>
+                        <h3 class="dish_price">$14.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Honey Moon Fried Rice</h3>
+                        <h3 class="dish_price">$17.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Take-Out Steamed Rice</h3>
+                        <h3 class="dish_price">$3.95</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eggfuyung">
+                <h2  class="menu_title">Egg Fu Yung</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Capital Egg Fu Yung</h3>
+                        <h3 class="dish_price">$13.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">BBQ Pork Egg Fu Yung</h3>
+                        <h3 class="dish_price">$12.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Shrimp Egg Fu Yung</h3>
+                        <h3 class="dish_price">$13.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Chicken Egg Fu Yung</h3>
+                        <h3 class="dish_price">$12.75</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chickenduck">
+                <h2  class="menu_title">Chicken & Duck</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">BBQ Duck</h3>
+                        <h3 class="dish_price">H $23.00 <br> W $42.00</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Breaded Almond Chicken</h3>
+                        <h3 class="dish_price">$14.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Sweet & Sour Chicken Balls with Pineapple</h3>
+                        <h3 class="dish_price">$14.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Chicken with Black Bean Sauce</h3>
+                        <h3 class="dish_price">$15.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Sliced Chicken with Oyster Sauce</h3>
+                        <h3 class="dish_price">$16.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Gong Bo Guy Ding with Peanuts</h3>
+                        <h3 class="dish_price">$14.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Curry Chicken</h3>
+                        <h3 class="dish_price">$15.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Breaded Boneless Chicken with Tangy Lemon Sauce</h3>
+                        <h3 class="dish_price">$15.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Sliced Chicken Szechuan Style</h3>
+                        <h3 class="dish_price">$15.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Tai-Chin Chicken</h3>
+                        <h3 class="dish_price">$16.25</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="beef">
+                <h2  class="menu_title">Beef</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Stir Fried Beef with Oyster Sauce</h3>
+                        <h3 class="dish_price">$16.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pan Fried Beef with Green Peppers in Black Bean Sauce</h3>
+                        <h3 class="dish_price">$15.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Szechuan Style Sliced Beef</h3>
+                        <h3 class="dish_price">$15.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Tangerine Beef</h3>
+                        <h3 class="dish_price">$17.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Honey Ginger Beef</h3>
+                        <h3 class="dish_price">$16.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Sliced Beef with Curry</h3>
+                        <h3 class="dish_price">$15.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Sauteed Beef with Pineapple & Ginger</h3>
+                        <h3 class="dish_price">$15.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Tai-Chin Beef</h3>
+                        <h3 class="dish_price">$16.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef & Honey Sauce</h3>
+                        <h3 class="dish_price">$16.95</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pork">
+                <h2 class="menu_title">Pork</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Capital Style Boneless Pork</h3>
+                        <h3 class="dish_price">$15.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Dry Garlic Boneless Pork</h3>
+                        <h3 class="dish_price">$15.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Honey Garlic Boneless Pork</h3>
+                        <h3 class="dish_price">$16.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Peppery Boneless Pork</h3>
+                        <h3 class="dish_price">$15.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pineapple Sweet & Sour Boneless Pork</h3>
+                        <h3 class="dish_price">$12.95</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chopsuey">
+                <h2  class="menu_title">Chop Suey & Vegetables</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Beef or Chicken w/ Two Kinds of Mushroom</h3>
+                        <h3 class="dish_price">$13.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Shrimp or Rock Cod w/ Two Kinds of Mushroom</h3>
+                        <h3 class="dish_price">$15.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef or Chicken w/ Seasonal Vegetables</h3>
+                        <h3 class="dish_price"> $14.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Shrimp or Rock Cod w/ Seasonal Vegetables</h3>
+                        <h3 class="dish_price">$15.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Chicken or Beef w/ Broccoli</h3>
+                        <h3 class="dish_price">$13.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">House Special Chop Suey</h3>
+                        <h3 class="dish_price">$16.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Almond or Cashew Guy Ding</h3>
+                        <h3 class="dish_price">$13.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Shrimp w/ Sauteed Fresh Tomatoes</h3>
+                        <h3 class="dish_price">$15.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef or Chicken w/ Sauteed Fresh Tomatoes</h3>
+                        <h3 class="dish_price">$14.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Mushroom Chop Suey</h3>
+                        <h3 class="dish_price">$13.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Beef, Chicken, or Pork Chop Suey</h3>
+                        <h3 class="dish_price">$14.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Shrimp Chop Suey</h3>
+                        <h3 class="dish_price">$15.50</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teppan">
+                <h2  class="menu_title">Sizzling Teppan</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Prawns Teppan in Black Bean Sauce</h3>
+                        <h3 class="dish_price">$17.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Golden Coin Beef with House Special Sauce</h3>
+                        <h3 class="dish_price">$17.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Sliced Chicken Teppan in Black Bean Sauce</h3>
+                        <h3 class="dish_price">$15.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Boneless Pork with Green Onion & Ginger in Oyster Sauce</h3>
+                        <h3 class="dish_price">$15.95</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotpot">
+                <h2  class="menu_title">Hot Pot</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Capital Hot Pot</h3>
+                        <h3 class="dish_price">$16.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Sliced Beef with Ginger & Green Onion Hot Pot</h3>
+                        <h3 class="dish_price">$16.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Seafood Hot Pot</h3>
+                        <h3 class="dish_price">$17.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Satay Seafood Hot Pot</h3>
+                        <h3 class="dish_price">$17.95</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seafood">
+                <h2  class="menu_title">Seafood</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Deep Fried Prawns</h3>
+                        <h3 class="dish_price">$14.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Curry Shrimp</h3>
+                        <h3 class="dish_price">$16.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pan Fried Squid</h3>
+                        <h3 class="dish_price">$15.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Gong Bo Shrimp with Peanuts</h3>
+                        <h3 class="dish_price">$16.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Singapore Seafood</h3>
+                        <h3 class="dish_price">$19.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Fried Prawns in Shell with Peppery Salt</h3>
+                        <h3 class="dish_price">$17.25</h3>
+                    </div>
+                        <div class="dish">
+                        <h3 class="dish_name">Squids with Green Pepper & Black Bean Sauce</h3>
+                        <h3 class="dish_price">$15.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pan Fried Rock Cod with Black Bean Sauce</h3>
+                        <h3 class="dish_price">$16.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Szechuan Style Shrimp</h3>
+                        <h3 class="dish_price">$16.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Szechuan Style Rock Cod</h3>
+                        <h3 class="dish_price">$16.25</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vegetarian">
+                <h2  class="menu_title">Vegetarian</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Mushroom Chow Mein</h3>
+                        <h3 class="dish_price">$11.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Assorted Vegetable Hot pot with Satay Sauce</h3>
+                        <h3 class="dish_price">$13.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Sauteed Chinese Mushroom with Vegetables</h3>
+                        <h3 class="dish_price">$14.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pan Fried Triple Vegetables</h3>
+                        <h3 class="dish_price">$11.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Diced Vegetables with Cashew Nuts</h3>
+                        <h3 class="dish_price">$12.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Bean Cake with Black Bean Sauce</h3>
+                        <h3 class="dish_price">$13.50</h3>
+                    </div>
+                        <div class="dish">
+                        <h3 class="dish_name">Mushroom Fried Rice</h3>
+                        <h3 class="dish_price">$11.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pan Fried Bean Sprouts</h3>
+                        <h3 class="dish_price">$11.75</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Buddha’s Feast</h3>
+                        <h3 class="dish_price">$13.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Braised Bean Cake</h3>
+                        <h3 class="dish_price">$12.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Mushroom Egg Fu Yung</h3>
+                        <h3 class="dish_price">$12.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Assorted Vegetables with Black Bean Sauce</h3>
+                        <h3 class="dish_price">$14.25</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Deep Fried Bean Cake with Peppery Salth</h3>
+                        <h3 class="dish_price">$14.95</h3>
+                    </div>
+                    </div>
+                </div>
+
+            <div class="housespecialties">
+                <h2  class="menu_title">House Specialities</h2>
+                <div class="menu_section">
+                    <div class="dish">
+                        <h3 class="dish_name">Signapore Prawns</h3>
+                        <h3 class="dish_price">$19.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Capital Prawns</h3>
+                        <h3 class="dish_price">$19.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Bean Cake with Minced Beef</h3>
+                        <h3 class="dish_price">$14.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Honey Garlic Chicken Wings</h3>
+                        <h3 class="dish_price">$13.50</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Seafood Chop Suey</h3>
+                        <h3 class="dish_price">$17.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">Pan Fried Triple Seafood</h3>
+                        <h3 class="dish_price">$14.95</h3>
+                    </div>
+                    <div class="dish">
+                        <h3 class="dish_name">BBQ Pork with Bean Cake</h3>
+                        <h3 class="dish_price">$14.75</h3>
+                    </div>
+                </div>
+            </div>
+
+                <div class="chefspecial">
+                <div class="chefspecial_wrapper">
+                    <div class="chefspecial_header">
+                        <h1 id="combinations" class="chefspecial_title">CHEF'S SPECIAL</h1>
+                        <h2 class="chefspecial_description">Combination Dinners</h2>
+                        <p class="chefspecial_note">(No Substitutions)</p>
+                    </div>
+
+                    <div class="combos">
+                        <div class="combo_meal">
+                            <h3 class="combo_name">Combination A</h3>
+                            <ul>
+                                <li>Chow Mein</li>
+                                <li>Sweet & Sour Boneless Pork</li>
+                                <li>Deep Fried Prawn</li>
+                            </ul>
+                            <h3 class="combo_price">$12.95</h3>
+                        </div>
+                        <div class="combo_meal">
+                            <h3 class="combo_name">Combination B</h3>
+                            <ul>
+                                <li>Chow Mein</li>
+                                <li>Sweet & Sour Boneless Pork</li>
+                                <li>Almond Chicken</li>
+                            </ul>
+                            <h3 class="combo_price">$12.95</h3>
+                        </div>
+                        <div class="combo_meal">
+                            <h3 class="combo_name">Combination C</h3>
+                            <ul>
+                                <li>Chow Mein</li>
+                                <li>Sweet & Sour Chicken</li>
+                                <li>Pork Fried Rice</li>
+                            </ul>
+                            <h3 class="combo_price">$13.75</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="set_dinners">
+                    <div class="combo_meal">
+                        <h3 class="combo_name">Dinner for 2</h3>
+                        <ul>
+                            <li>2 Egg Rolls</li>
+                            <li>Chicken Chow Mein</li>
+                            <li>Sweet & Sour Boneless Pork</li>
+                            <li>Beef Chop Suey</li>
+                        </ul>
+                        <h3 class="combo_price">$39.95</h3>
+                    </div>
+                    <div class="combo_meal">
+                        <h3 class="combo-name">Dinner for 4</h3>
+                        <ul>
+                            <li>4 Egg Rolls</li>
+                            <li>Sweet & Sour Boneless Pork</li>
+                            <li>Chicken Chow Mein</li>
+                            <li>Yang Chow Fried Rice</li>
+                            <li>Almond Chicken</li>
+                            <li>House Special Chop Suey</li>
+                        </ul>
+                        <h3 class="combo_price">$69.95</h3>
+                    </div>
+                    <div class="combo_meal">
+                        <h3 class="combo_name">Dinner for 6</h3>
+                        <ul>
+                            <li>6 Egg Rolls</li>
+                            <li>Sweet & Sour Boneless Pork</li>
+                            <li>Capital Chow Mein</li>
+                            <li>Yang Chow Fried Rice</li>
+                            <li>House Special Chop Suey</li>
+                            <li>Deep Fried Prawns</li>
+                            <li>Beef Hot Pot</li>
+                        </ul>
+                        <h3 class="combo_price">$89.95</h3>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="sideorder">
+                <div class="sideorder_wrapper">
+                    <h3 class="sideorder_title">Side Orders</h3>
+                    <div class="sideorder_flex">
+                        <ul class="sideorder_item">
+                            <li>Sweet & Sour Sauce</li>
+                            <li>Black Bean Sauce</li>
+                            <li>Sesame Seeds</li>
+                            <li>Curry Sauce</li>
+                            <li>Honey Garlic Sauce</li>
+                        </ul>
+                        <ul class="sideorder_price">
+                            <li>$2.50</li>
+                            <li>$2.95</li>
+                            <li>$1.00</li>
+                            <li>$3.95</li>
+                            <li>$4.25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-
-  
-
-    <div class="menu-wrapper">
-      
-      <div class="appetizer visible">
-        <h2 class="menu-title">Appetizers</h2>
-        <div class="menu-section">
-        <div class="dish">
-          <h3 class="dish-name">Spring Egg Roll</h3>
-          <h3 class="dish-price">$3.50 each</h3>
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Deep Fried Chicken Wings</h3>
-          <h3 class="dish-price">$13.95</h3>
-          </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Peppery Chicken Wings</h3>
-          <h3 class="dish-price">$14.50</h3>
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Lettuce Wrap</h3>
-          <h3 class="dish-price">$17.95</h3>
-        
-        </div>
-      </div>
-    </div>
-
-      <div class="soup">
-        <h2  class="menu-title">Soup</h2>
-        <div class="menu-section">
-
-        <div class="dish">
-          <h3 class="dish-name">Wonton Soup </h3>
-          <h3 class="dish-price">S $5.95 <br> M $10.25 <br> L $13.25</h3>
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Shredded Chicken with Tomato & Egg Swirls</h3>
-          
-          <h3 class="dish-price">$9.50</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Velvet Chicken & Sweet Corn Soup</h3>
-          
-          <h3 class="dish-price">S $5.50 <br> M $9.25 <br> L $11.95</h3>
-         
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Consomme</h3>
-          
-          <h3 class="dish-price">$3.00</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Wor Wonton Soup</h3>
-          
-          <h3 class="dish-price">M $14.25 <br> L $17.50</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Hot & Sour Soup</h3>
-          
-          <h3 class="dish-price">S $7.95 <br> M $13.95 <br> L $17.25</h3>
-      
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Rainbow Bean Cake Soup</h3>
-         
-          <h3 class="dish-price">$11.50</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Chicken, Pork or Beef Noodle Soup</h3>
-          
-          <h3 class="dish-price">$11.25</h3>
-  
-        </div>
-      </div>
-    </div>
-
-     <div class="chowmein">
-        <h2  class="menu-title">Chow Mein</h2>
-        <div class="menu-section">
-        <div class="dish">
-          <h3 class="dish-name">Plain Chow Mein</h3>
-          
-          <h3 class="dish-price">
-            $12.95
-          </h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Chicken Chow Mein</h3>
-          
-          <h3 class="dish-price">
-            $13.25
-          </h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Pork Chow Mein</h3>
-          
-          <h3 class="dish-price">
-            $13.25
-          </h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Mushroom Chow Mein</h3>
-          
-          <h3 class="dish-price">
-            $13.25
-          </h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Shrimp Chow Mein</h3>
-          
-          <h3 class="dish-price">
-            $14.25
-          </h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Beef Chow Mein</h3>
-          
-          <h3 class="dish-price">
-            $13.95
-          </h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Cantonese Chow Mein</h3>
-          
-          <h3 class="dish-price">$17.95</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Beef & Tomato Chow Mein</h3>
-          <h3 class="dish-price">$16.50</h3>
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">
-            Pan Fried Noodle with Curry (Singapore Style)
-          </h3>
-         
-          <h3 class="dish-price">$17.50</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Capital Chow Mein</h3>
-         
-          <h3 class="dish-price">$14.50</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Triple Seafood Chow Mein (Cantonese Style)</h3>
-          
-          <h3 class="dish-price">$18.95</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Beef Chow Fun (Broad Rice Noodle)</h3>
-          
-          <h3 class="dish-price">$17.50</h3>
-        
-        </div>
-      </div>
-    </div>
-
-      <div class="friedrice">
-        <h2  class="menu-title">Fried Rice</h2>
-
-        <div class="menu-section">
-
-        <div class="dish">
-          <h3 class="dish-name">Pork Fried Rice</h3>
-          
-          <h3 class="dish-price">
-            $11.95
-          </h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Shrimp Fried Rice</h3>
-          
-          <h3 class="dish-price">
-            $11.95
-          </h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Chicken Fried Rice</h3>
-          
-          <h3 class="dish-price">
-            $11.95
-          </h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Mushroom Fried Rice</h3>
-          
-          <h3 class="dish-price">
-            $11.95
-          </h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Beef Fried Rice</h3>
-          
-          <h3 class="dish-price">
-            $12.50
-          </h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Yang Chow Fried Rice</h3>
-          
-          <h3 class="dish-price">$12.50</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Beef & Tomato Fried Rice</h3>
-          
-          <h3 class="dish-price">$14.95</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Honey Moon Fried Rice</h3>
-         
-          <h3 class="dish-price">$17.25</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Take-Out Steamed Rice</h3>
-          
-          <h3 class="dish-price">$3.95</h3>
-       
-        </div>
-      </div>
-    </div>
-
-      <div class="eggfuyung">
-        <h2  class="menu-title">Egg Fu Yung</h2>
-        <div class="menu-section">
-        <div class="dish">
-          <h3 class="dish-name">Capital Egg Fu Yung</h3>
-          
-          <h3 class="dish-price">$13.75</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">BBQ Pork Egg Fu Yung</h3>
-          
-          <h3 class="dish-price">$12.75</h3>
-      
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Shrimp Egg Fu Yung</h3>
-         
-          <h3 class="dish-price">$13.25</h3>
-        </div>
-        
-
-        <div class="dish">
-          <h3 class="dish-name">Chicken Egg Fu Yung</h3>
-          
-          <h3 class="dish-price">$12.75</h3>
-        </div>
-       </div>
-      </div>
-
-      <div class="chickenduck">
-        <h2  class="menu-title">Chicken & Duck</h2>
-        <div class="menu-section">
-        <div class="dish">
-          <h3 class="dish-name">BBQ Duck</h3>
-         
-          <h3 class="dish-price">H $23.00 <br> W $42.00</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Breaded Almond Chicken</h3>
-         
-          <h3 class="dish-price">$14.75</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Sweet & Sour Chicken Balls with Pineapple</h3>
-          
-          <h3 class="dish-price">$14.75</h3>
-      
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Chicken with Black Bean Sauce</h3>
-         
-          <h3 class="dish-price">$15.50</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Sliced Chicken with Oyster Sauce</h3>
-          
-          <h3 class="dish-price">$16.25</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Gong Bo Guy Ding with Peanuts</h3>
-          
-          <h3 class="dish-price">$14.50</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Curry Chicken</h3>
-          
-          <h3 class="dish-price">$15.75</h3>
-       
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">
-            Breaded Boneless Chicken with Tangy Lemon Sauce
-          </h3>
-         
-          <h3 class="dish-price">$15.95</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Sliced Chicken Szechuan Style</h3>
-         
-          <h3 class="dish-price">$15.50</h3>
-        
-        </div>
-
-        <div class="dish">
-          <h3 class="dish-name">Tai-Chin Chicken</h3>
-         
-          <h3 class="dish-price">$16.25</h3>
-       
-        </div>
-      </div>
-    </div>
-      
-      <div class="beef">
-        <h2  class="menu-title">Beef</h2>
-        <div class="menu-section">
-        <div class="dish">
-            <h3 class="dish-name">Stir Fried Beef with Oyster Sauce</h3>
-            
-            <h3 class="dish-price">$16.25</h3>
-          
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Pan Fried Beef with Green Peppers in Black Bean Sauce</h3>
-            
-            <h3 class="dish-price">$15.25</h3>
-         
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Szechuan Style Sliced Beef</h3>
-            
-            <h3 class="dish-price">$15.50</h3>
-          
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Tangerine Beef</h3>
-           
-            <h3 class="dish-price">$17.25</h3>
-        
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Honey Ginger Beef</h3>
-            
-            <h3 class="dish-price">$16.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Sliced Beef with Curry</h3>
-           
-            <h3 class="dish-price">$15.75</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Sauteed Beef with Pineapple & Ginger</h3>
-            
-            <h3 class="dish-price">$15.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Tai-Chin Beef</h3>
-            
-            <h3 class="dish-price">$16.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Beef & Honey Sauce</h3>
-            
-            <h3 class="dish-price">$16.95</h3>
-          </div>
-        </div>
-      </div>
-
-        <div class="pork" >
-          <h2 class="menu-title">Pork</h2>
-          <div class="menu-section">
-          <div class="dish">
-            <h3 class="dish-name">Capital Style Boneless Pork</h3>
-            
-            <h3 class="dish-price">$15.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Dry Garlic Boneless Pork</h3>
-           
-            <h3 class="dish-price">$15.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Honey Garlic Boneless Pork</h3>
-            
-            <h3 class="dish-price">$16.50</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Peppery Boneless Pork</h3>
-            
-            <h3 class="dish-price">$15.75</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Pineapple Sweet & Sour Boneless Pork</h3>
-           
-            <h3 class="dish-price">$12.95</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="chopsuey">
-          <h2  class="menu-title">Chop Suey & Vegetables</h2>
-          <div class="menu-section">
-          <div class="dish">
-            <h3 class="dish-name">Beef or Chicken w/ Two Kinds of Mushroom</h3>
-           
-            <h3 class="dish-price">$13.50</h3>
-          </div>
-
-          <div class="dish">
-            <h3 class="dish-name">Shrimp or Rock Cod w/ Two Kinds of Mushroom</h3>
-           
-            <h3 class="dish-price">$15.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Beef or Chicken w/ Seasonal Vegetables</h3>
-            
-            <h3 class="dish-price"> $14.50</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Shrimp or Rock Cod w/ Seasonal Vegetables</h3>
-            
-            <h3 class="dish-price">$15.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Chicken or Beef w/ Broccoli</h3>
-           
-            <h3 class="dish-price">$13.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">House Special Chop Suey</h3>
-            
-            <h3 class="dish-price">$16.50</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Almond or Cashew Guy Ding</h3>
-            
-            <h3 class="dish-price">$13.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Shrimp w/ Sauteed Fresh Tomatoes</h3>
-            
-            <h3 class="dish-price">$15.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Beef or Chicken w/ Sauteed Fresh Tomatoes</h3>
-            
-            <h3 class="dish-price">$14.75</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Mushroom Chop Suey</h3>
-           
-            <h3 class="dish-price">$13.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Beef, Chicken, or Pork Chop Suey</h3>
-           
-            <h3 class="dish-price">$14.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Shrimp Chop Suey</h3>
-           
-            <h3 class="dish-price">$15.50</h3>
-          </div>
-        </div>
-      </div>
-        
-      <div class="teppan">
-          <h2  class="menu-title">Sizzling Teppan</h2>
-          <div class="menu-section">
-          <div class="dish">
-            <h3 class="dish-name">Prawns Teppan in Black Bean Sauce</h3>
-            
-            <h3 class="dish-price">$17.75</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Golden Coin Beef with House Special Sauce</h3>
-            
-              <h3 class="dish-price">$17.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Sliced Chicken Teppan in Black Bean Sauce</h3>
-            
-              <h3 class="dish-price">$15.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Boneless Pork with Green Onion & Ginger in Oyster Sauce</h3>
-           
-            
-              <h3 class="dish-price">$15.95</h3>
-          </div>
-        </div>
-      </div>
-        
-      <div class="hotpot">
-          <h2  class="menu-title">Hot Pot</h2>
-          <div class="menu-section">
-          <div class="dish">
-            <h3 class="dish-name">Capital Hot Pot</h3>
-            
-            <h3 class="dish-price">$16.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Sliced Beef with Ginger & Green Onion Hot Pot</h3>
-          
-            <h3 class="dish-price">$16.75</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Seafood Hot Pot</h3>
-            
-            <h3 class="dish-price">$17.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Satay Seafood Hot Pot</h3>
-            
-            <h3 class="dish-price">$17.95</h3>
-          </div>
-        </div>
-      </div>
-
-        <div class="seafood">
-          <h2  class="menu-title">Seafood</h2>
-          <div class="menu-section">
-          <div class="dish">
-            <h3 class="dish-name">Deep Fried Prawns</h3>
-           
-           
-            <h3 class="dish-price">$14.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Curry Shrimp</h3>
-            
-            <h3 class="dish-price">$16.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Pan Fried Squid</h3>
-            
-            <h3 class="dish-price">$15.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Gong Bo Shrimp with Peanuts</h3>
-            
-            <h3 class="dish-price">$16.75</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Singapore Seafood</h3>
-            
-            <h3 class="dish-price">$19.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Fried Prawns in Shell with Peppery Salt</h3>
-            
-            <h3 class="dish-price">$17.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Squids with Green Pepper & Black Bean Sauce</h3>
-            
-            <h3 class="dish-price">$15.75</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Pan Fried Rock Cod with Black Bean Sauce</h3>
-            
-            <h3 class="dish-price">$16.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Szechuan Style Shrimp</h3>
-            
-            <h3 class="dish-price">$16.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Szechuan Style Rock Cod</h3>
-           
-            <h3 class="dish-price">$16.25</h3>
-          </div>
-        </div>
-      </div>
-        
-      <div class="vegetarian">
-          <h2  class="menu-title">Vegetarian</h2>
-          <div class="menu-section">
-          <div class="dish">
-            <h3 class="dish-name">Mushroom Chow Mein</h3>
-            
-            <h3 class="dish-price">$11.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Assorted Vegetable Hot pot with Satay Sauce</h3>
-           
-            <h3 class="dish-price">$13.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Sauteed Chinese Mushroom with Vegetables</h3>
-            
-            <h3 class="dish-price">$14.50</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Pan Fried Triple Vegetables</h3>
-           
-            <h3 class="dish-price">$11.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Diced Vegetables with Cashew Nuts</h3>
-           
-            <h3 class="dish-price">$12.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Bean Cake with Black Bean Sauce</h3>
-           
-            <h3 class="dish-price">$13.50</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Mushroom Fried Rice</h3>
-         
-            <h3 class="dish-price">$11.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Pan Fried Bean Sprouts</h3>
-            
-            <h3 class="dish-price">$11.75</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Buddha’s Feast</h3>
-           
-            <h3 class="dish-price">$13.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Braised Bean Cake</h3>
-           
-            <h3 class="dish-price">$12.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Mushroom Egg Fu Yung</h3>
-           
-            <h3 class="dish-price">$12.50</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Assorted Vegetables with Black Bean Sauce</h3>
-           
-            <h3 class="dish-price">$14.25</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Deep Fried Bean Cake with Peppery Salth</h3>
-           
-            <h3 class="dish-price">$14.95</h3>
-          </div>
-        </div>
-      </div>
-       
-      <div class="housespecialties">
-          <h2  class="menu-title">House Specialities</h2>
-          <div class="menu-section">
-          <div class="dish">
-            <h3 class="dish-name">Signapore Prawns</h3>
-           
-            <h3 class="dish-price">$19.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Capital Prawns</h3>
-           
-            <h3 class="dish-price">$19.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Bean Cake with Minced Beef</h3>
-          
-            <h3 class="dish-price">$14.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Honey Garlic Chicken Wings</h3>
-          
-            <h3 class="dish-price">$13.50</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Seafood Chop Suey</h3>
-          
-            <h3 class="dish-price">$17.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">Pan Fried Triple Seafood</h3>
-         
-            <h3 class="dish-price">$14.95</h3>
-          </div>
-          <div class="dish">
-            <h3 class="dish-name">BBQ Pork with Bean Cake</h3>
-          
-            <h3 class="dish-price">$14.75</h3>
-          </div>
-          </div>
-        
-  </div>
-
-<div class="chefspecial">
-    <div class="chefspecial-wrapper">
-      <div class="chefspecial-header">
-        <h1 id="combinations" class="chefspecial-title">CHEF'S SPECIAL</h1>
-        <h2 class="chefspecial-description">Combination Dinners</h2>
-        <p class="chefspecial-note">(No Substitutions)</p>
-      </div>
-
-      <div class="combos">
-        <div class="combomeal">
-          <h3 class="combo-name">
-            Combination A
-          </h3>
-          <ul>
-            <li>Chow Mein</li>
-            <li>Sweet & Sour Boneless Pork</li>
-            <li>Deep Fried Prawn</li>
-          </ul>
-          <h3 class="combo-price">$12.95</h3>
-        </div>
-        <div class="combomeal">
-          <h3 class="combo-name">
-            Combination B
-          </h3>
-          <ul>
-            <li>Chow Mein</li>
-            <li>Sweet & Sour Boneless Pork</li>
-            <li>Almond Chicken</li>
-          </ul>
-          <h3 class="combo-price">$12.95</h3>
-        </div>
-        <div class="combomeal">
-          <h3 class="combo-name">
-            Combination C
-          </h3>
-          <ul>
-            <li>Chow Mein</li>
-            <li>Sweet & Sour Chicken</li>
-            <li>Pork Fried Rice</li>
-          </ul>
-          <h3 class="combo-price">$13.75</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="set-dinners">
-      <div class="combomeal">
-        <h3 class="combo-name">
-          Dinner for 2
-        </h3>
-        <ul>
-          <li>2 Egg Rolls</li>
-          <li>Chicken Chow Mein</li>
-          <li>Sweet & Sour Boneless Pork</li>
-          <li>Beef Chop Suey</li>
-        </ul>
-        <h3 class="combo-price">$39.95</h3>
-      </div>
-      <div class="combomeal">
-        <h3 class="combo-name">
-          Dinner for 4
-        </h3>
-        <ul>
-          <li>4 Egg Rolls</li>
-          <li>Sweet & Sour Boneless Pork</li>
-          <li>Chicken Chow Mein</li>
-          <li>Yang Chow Fried Rice</li>
-          <li>Almond Chicken</li>
-          <li>House Special Chop Suey</li>
-        </ul>
-        <h3 class="combo-price">$69.95</h3>
-      </div>
-      <div class="combomeal">
-        <h3 class="combo-name">
-          Dinner for 6
-        </h3>
-        <ul>
-          <li>6 Egg Rolls</li>
-          <li>Sweet & Sour Boneless Pork</li>
-          <li>Capital Chow Mein</li>
-          <li>Yang Chow Fried Rice</li>
-          <li>House Special Chop Suey</li>
-          <li>Deep Fried Prawns</li>
-          <li>Beef Hot Pot</li>
-        </ul>
-        <h3 class="combo-price">$89.95</h3>
-      </div>
-    </div>
-    </div>
-  
-    <div class="sideorder">
-    <div class="sideorder-wrapper">
-      <h3 class="sideorder-title">Side Orders</h3>
-      <div class="sideorder-flex">
-      <ul class="sideorder-item">
-        <li>Sweet & Sour Sauce</li>
-        <li>Black Bean Sauce</li>
-        <li>Sesame Seeds</li>
-        <li>Curry Sauce</li>
-        <li>Honey Garlic Sauce</li>
-      </ul>
-      <ul class="sideorder-price">
-        <li>$2.50</li>
-        <li>$2.95</li>
-        <li>$1.00</li>
-        <li>$3.95</li>
-        <li>$4.25</li>
-      </ul>
-    </div>
-  </div>
-  </div>
-</div>
-
-</div>
-</div>
 
     <footer>
-    </div>
-      <div class="footerinfo">
-        <i class="footericon fa-solid fa-location-pin"></i>
-        <p>45766 Kipp Ave. Chilliwack BC, V2P 1Y4</p>
-        <i class="footericon fa-solid fa-phone"></i>
-        <p>604-795-7805</p>
-      </div>
-      <div class="footerinfo">
-        <i class="footericon fa-solid fa-clock"></i>
-        <p>Tues-Thurs: 11:30am-9pm</p>
-        <p>Fri: 11:30am-3pm / 4:30-9pm</p>
-        <p>Sat: 12-3pm / 4:30-9pm</p>
-        <p>Sun-Mon: Closed</p>
-      </div>
-      <div class="footerinfo">
-        <img class="footerpic" src="capital_logo.svg" alt="Capital logo">
-        <p>Made by <a class="footerlink" href="https://garrettjohnson.ca">Garrett Johnson</a></p>
-      </div>
+        <div class="footer_info">
+            <i class="footer_icon fa-solid fa-location-pin"></i>
+            <p>45766 Kipp Ave. Chilliwack BC, V2P 1Y4</p>
+            <i class="footer_icon fa-solid fa-phone"></i>
+            <p>604-795-7805</p>
+        </div>
+        <div class="footer_info">
+            <i class="footer_icon fa-solid fa-clock"></i>
+            <p>Tues-Thurs: 11:30am-9pm</p>
+            <p>Fri: 11:30am-3pm / 4:30-9pm</p>
+            <p>Sat: 12-3pm / 4:30-9pm</p>
+            <p>Sun-Mon: Closed</p>
+        </div>
+        <div class="footer_info">
+            <img class="footer_pic" src="capital_logo.svg" alt="Capital logo">
+            <p>Made by <a class="footer_link" href="https://garrettjohnson.ca">Garrett Johnson</a></p>
+        </div>
     </footer>
-    <script src="index.js" async defer></script>
-  </body>
 
+    <!-- JAVASCRIPT -->
+    <script src="index.js" async defer></script>
+
+</body>
 </html>

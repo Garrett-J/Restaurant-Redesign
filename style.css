@@ -514,11 +514,7 @@ iframe {
 }
 
 /* MENU SECTION menu.html */
-/* changes the button colour to indicate the current menu section */
-.active {
-    color:white;
-    background-color:#5b1012;
-}
+
 
 /* by default hide all of the menu sections */
 .appetizer, .beef, .chefspecial, .chickenduck, .chopsuey, .chowmein, .eggfuyung, .friedrice, .hotpot, .housespecialties, .pork, .seafood, .sideorder, .soup, .teppan, .vegetarian {
@@ -701,11 +697,19 @@ iframe {
     flex-direction: column;
 }
 
+/* changes the button colour to indicate the current menu section */
+.active {
+    color:white;
+    background-color:#5b1012;
+}
+
 /* show the section of the menu corresponding to the current active button */
 .visible {
     display: block;
     visibility: visible;
 }
+
+
 
 /* TABLET MENU PAGE */
 @media screen and (max-width: 1023px) {
