@@ -1,111 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Redesign</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Open Sans -->
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-<!-- Lato -->
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Redesign</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<span class="mobile-menu-background"></span>
 
-    
-        <header>
-            <div class="nav-btn">
-                <span class="burger-menu"></span>
-            </div>
-            <nav class="navlist">
-                <img class="nav-pic" src="textonly.png" alt="">
-                 <div class="mobile-menu-wrapper">
-                  <ul class="navmenu">
-                    <li><a class="navitem" href="index.html">Home</a></li>
-                    <li>
-                      <a class="navitem " href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                      <a class="navitem active-nav" href="location.html"
-                        >Our Restaurant</a>
-                    </li>
-                    <li>
-                      <a class="navitem noborder " href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                  </div>
-                
-              </nav>
-            </header>
+<!-- Hidden by default, is active when mobile menu is open -->
+<span class="mobile_menu_background"></span>
+
+<header>
+    <div class="nav_btn">
+        <span class="burger_menu"></span>
+    </div>
+    <nav class="nav_list">
+        <img class="nav_pic" src="textonly.png" alt="">
+        <div class="mobile_menu_wrapper">
+            <ul class="nav_menu">
+                <li><a class="nav_item" href="index.html">Home</a></li>
+                <li><a class="nav_item " href="menu.html">Menu</a></li>
+                <li><a class="nav_item active_nav" href="location.html">Our Restaurant</a></li>
+                <li><a class="nav_item no_border " href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
 <body>
-    
-
-    <div class="locationdiv">
-        
-        <h1 class="locationyear">
-            
-            Proudly serving Chilliwack since 1983
-        </h1>
-        
-        <div class="vidcontainer">
-            
-            <div class="locationheader">
-                <h2 class="locationtitle">Who we are</h2>
+    <div class="location_div">        
+        <h1 class="location_year">Proudly serving Chilliwack since 1983</h1>
+        <div class="vid_container">
+            <div class="location_header">
+                <h2 class="location_title">Who we are</h2>
                 <p>At the Capital we pride ourselves on being a multi-generational family run restaurant. We take great satisfaction from serving the amazing community of Chilliwack and look forward to continuing to do so for decades to come.</p>
-                <hr class="locationhr">
+                <hr class="location_hr">
             </div>
-            <div class="locationvideo">
+            <div class="location_video">
                 <iframe   src="https://www.youtube.com/embed/ke_2kcMB3fc?modestbranding=1" title="The Express - Capital Restaurant Father & Son, Jan. 27, 2012" frameborder="0" allow="accelerometer; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            </div>
-        <div class="vidcontainer">
-            <div class="locationheader">
-                <h2 class="locationtitle">Our community</h2>
+        </div>
+        <div class="vid_container">
+            <div class="location_header">
+                <h2 class="location_title">Our community</h2>
                 <p>We want to thank everyone from our long time customers to those of you we haven't have the pleasure of meeting yet for taking the time to visit us online. We hope to see you soon.</p>
-                <hr class="locationhr">
+                <hr class="location_hr">
             </div>
             
-            <div class="locationvideo">
+            <div class="location_video">
                 <iframe  src="https://www.youtube.com/embed/IAeU64yAI9c?modestbranding=1" title="Chinese New Years Celebration" frameborder="0" allow="accelerometer; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            
-            </div>
-            
+        </div>
     </div>
 
     <footer>
-        <div class="footerinfo">
-            <i class="footericon fa-solid fa-location-pin"></i>
+        <div class="footer_info">
+            <i class="footer_icon fa-solid fa-location-pin"></i>
             <p>45766 Kipp Ave. Chilliwack BC, V2P 1Y4</p>
-            <i class="footericon fa-solid fa-phone"></i>
+            <i class="footer_icon fa-solid fa-phone"></i>
             <p>604-795-7805</p>
         </div>
-        <div class="footerinfo">
-            <i class="footericon fa-solid fa-clock"></i>
+        <div class="footer_info">
+            <i class="footer_icon fa-solid fa-clock"></i>
             <p>Tues-Thurs: 11:30am-9pm</p>
             <p>Fri: 11:30am-3pm / 4:30-9pm</p>
             <p>Sat: 12-3pm / 4:30-9pm</p>
             <p>Sun-Mon: Closed</p>
         </div>
-        <div class="footerinfo">
-            <img class="footerpic" src="capital_logo.svg" alt="Capital logo">
-        <p>Made by <a class="footerlink" href="https://garrettjohnson.ca">Garrett Johnson</a></p>
-    </div>
-
-
-            
-            
-
+        <div class="footer_info">
+            <img class="footer_pic" src="capital_logo.svg" alt="Capital logo">
+            <p>Made by <a class="footer_link" href="https://garrettjohnson.ca">Garrett Johnson</a></p>
+        </div>
     </footer>
+
+    <!-- Youtube iframe api -->
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="jquery-3.6.0.min.js"></script>
+    <!-- JAVASCRIPT -->
     <script src="index.js" async defer></script>
+
 </body>
 </html>
