@@ -522,6 +522,79 @@ iframe {
     visibility: hidden;
 }
 
+.chefspecial_header {
+    color:#981b1e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.chefspecial_title {
+    font-size: calc(20px + 1.5vw);
+    font-weight: 800;
+    margin: 0;
+}
+
+.chefspecial_note {
+    color: #242020;
+}
+
+.combos {
+    column-gap: 12vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+
+.combo_meal {
+    padding-top: 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+.combo_meal ul {
+    list-style: none;
+    padding: 0;
+    line-height: 3rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.combo_name {
+    font-weight: 800;
+    margin: 0;
+}
+
+.combo_price {
+    font-size: 16px;
+}
+
+.dish {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish_name_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dish_name {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.dish_price {
+    white-space: nowrap;
+    font-size: 16px;
+    padding-left: 1rem;
+    text-align: right;
+}
+
 .menu_btn {
     background-color: white;
     border-color: rgba(36, 32, 32, 0.5);
@@ -573,93 +646,18 @@ iframe {
 }
 
 .menu_section {
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5vw;
     row-gap: 3vw;
-    align-items: center;
-}
-
-.dish {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.dish_name_container {
-    display: flex;
-    flex-direction: column;
-}
-
-.dish_name {
-    font-weight: 800;
-    font-size: 16px;
-}
-
-.dish_price {
-    white-space: nowrap;
-    font-size: 16px;
-    padding-left: 1rem;
-    text-align: right;
-}
-
-.chefspecial_wrapper {
-    padding: 0 10vw;
-}
-
-.chefspecial_header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.chefspecial_title {
-    color: #981b1e;
-    font-size: calc(20px + 1.5vw);
-    font-weight: 800;
-    margin: 0;
-    padding-top: 3vw;
-}
-
-.combos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.combo_meal {
-    padding-top: 2rem;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.combo_meal ul {
-    list-style: none;
-    padding: 0;
-    line-height: 3rem;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.combo_name {
-    font-weight: 800;
-    margin: 0;
-}
-
-.combo_price {
-    font-size: 16px;
 }
 
 .set_dinners {
-    padding: 5rem 10vw;
+    column-gap: 12vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-
-.sideorder {
-    padding: 0 10vw;
+    justify-content: center;
 }
 
 .sideorder_title{
@@ -689,6 +687,7 @@ iframe {
     font-size: 16px;
     line-height: 3rem;
     list-style: none;
+    font-weight: 600;
 }
 
 .sideorder_wrapper {
@@ -757,6 +756,18 @@ iframe {
 /* MOBILE MENU PAGE */
 @media screen and (max-width: 767px ) {
 
+    .chefspecial_header {
+        align-items: flex-start;
+    }
+
+    .combo_meal {
+        text-align: left;
+    }
+
+    .combos {
+        flex-direction: column;
+    }
+
     .dish_price {
         margin: 0;
      }
@@ -778,6 +789,14 @@ iframe {
     .menu_wrapper {
         display: flex;
         justify-content: flex-start;
+    }
+
+    .set_dinners {
+        flex-direction: column;
+    }
+
+    .sideorder_wrapper {
+        align-items: flex-start;
     }
 }
 
